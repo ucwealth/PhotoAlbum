@@ -33,9 +33,7 @@ class PhotoViewModel {
         
         dispatchGroup.enter()
         loadPhotos {  [weak self] photos in
-            let first400 = Array(photos[...349])
-            // only save first 10 photos of each album
-            self?.apiPhotoList = first400
+            self?.apiPhotoList = Array(photos[...499])
             dispatchGroup.leave()
         }
         
