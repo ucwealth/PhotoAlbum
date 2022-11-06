@@ -2,8 +2,7 @@
 import UIKit
 import Kingfisher
 class HorizontalCell: UICollectionViewCell {
-    static let identifier = "HorizontalCell"
-    
+    static let identifier = Constants.HorizontalCellID
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(imageBox)
@@ -15,7 +14,7 @@ class HorizontalCell: UICollectionViewCell {
 
     lazy var imageBox: UIImageView = {
         let image = UIImageView()
-        image.frame = CGRect(x: 0, y: 10, width: 100, height: 100)
+        image.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         image.backgroundColor = .orange
         image.layer.cornerRadius = 10
         return image

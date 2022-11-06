@@ -2,7 +2,7 @@
 import UIKit
 
 class AlbumRow: UITableViewCell {
-    static let identifier = "AlbumRow"
+    static let identifier = Constants.AlbumRowID
     var viewModel: PhotoViewModel?
     var photoUrls = [String]()
 
@@ -38,7 +38,7 @@ class AlbumRow: UITableViewCell {
     }
     
     func completeFetch() {
-        viewModel?.fetchFromDBCompletion = { [weak self] in
+        viewModel?.fetchDataCompletion = { [weak self] in
             DispatchQueue.main.async {
                 self?.collectionView.reloadData()
             }
@@ -49,9 +49,9 @@ class AlbumRow: UITableViewCell {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 100, height: 100)
-        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        layout.minimumLineSpacing = 1
-        layout.minimumInteritemSpacing = 1
+        layout.sectionInset = UIEdgeInsets(top: 1, left: 5, bottom: 10, right: 5)
+        layout.minimumLineSpacing = 5
+        layout.minimumInteritemSpacing = 5
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.register(HorizontalCell.self, forCellWithReuseIdentifier: HorizontalCell.identifier)
         view.dataSource = self
@@ -82,11 +82,7 @@ extension AlbumRow: UICollectionViewDataSource, UICollectionViewDelegate, UIColl
         cell.configure(with: photoUrls[indexPath.row])
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 100, height: 100)
-    }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
     }

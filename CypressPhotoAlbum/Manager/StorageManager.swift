@@ -16,9 +16,5 @@ final class StorageManager {
         return realm.objects(T.self)
 
     }
-    
-    func existInDb() {
-        
-    }
 
 }
