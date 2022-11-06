@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1FA98136F9DD5591A57867 /* Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DDA2E7B05A89E8AB5DC1FAD /* Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework */; };
+		76004689664C5C4A23D332BD /* Pods_CypressPhotoAlbumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572A3E4AD4E993D8A04CBFFA /* Pods_CypressPhotoAlbumTests.framework */; };
+		B42A903929131F9200C6A057 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903829131F9200C6A057 /* WebService.swift */; };
+		B42A903B29131FE300C6A057 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903A29131FE300C6A057 /* PhotoModel.swift */; };
+		B42A903D291328AE00C6A057 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903C291328AE00C6A057 /* PhotoViewModel.swift */; };
+		B49683F32912FD6C003EA2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F22912FD6C003EA2D5 /* AppDelegate.swift */; };
+		B49683F52912FD6C003EA2D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F42912FD6C003EA2D5 /* SceneDelegate.swift */; };
+		B49683F72912FD6C003EA2D5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F62912FD6C003EA2D5 /* PhotoViewController.swift */; };
+		B49683FA2912FD6C003EA2D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49683F82912FD6C003EA2D5 /* Main.storyboard */; };
+		B49683FC2912FD70003EA2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49683FB2912FD70003EA2D5 /* Assets.xcassets */; };
+		B49683FF2912FD70003EA2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49683FD2912FD70003EA2D5 /* LaunchScreen.storyboard */; };
+		B496840A2912FD70003EA2D5 /* CypressPhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49684092912FD70003EA2D5 /* CypressPhotoAlbumTests.swift */; };
+		B49684142912FD70003EA2D5 /* CypressPhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49684132912FD70003EA2D5 /* CypressPhotoAlbumUITests.swift */; };
+		B49684162912FD70003EA2D5 /* CypressPhotoAlbumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49684152912FD70003EA2D5 /* CypressPhotoAlbumUITestsLaunchTests.swift */; };
+		B496842929130623003EA2D5 /* AlbumRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B496842829130623003EA2D5 /* AlbumRow.swift */; };
+		B496842B29130F7A003EA2D5 /* HorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B496842A29130F7A003EA2D5 /* HorizontalCell.swift */; };
+		B4E12E8F291477990047C1DC /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E12E8E291477990047C1DC /* StorageManager.swift */; };
+		B4E12E91291479AA0047C1DC /* DbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E12E90291479AA0047C1DC /* DbModel.swift */; };
+		B4E12E932916ABE50047C1DC /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E12E922916ABE50047C1DC /* UIImage+Extension.swift */; };
+		D38DA669A3F4FC21C33DAA9F /* Pods_CypressPhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0861BD3E89739881637D8969 /* Pods_CypressPhotoAlbum.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B49684062912FD70003EA2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49683E72912FD6C003EA2D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49683EE2912FD6C003EA2D5;
+			remoteInfo = CypressPhotoAlbum;
+		};
+		B49684102912FD70003EA2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49683E72912FD6C003EA2D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49683EE2912FD6C003EA2D5;
+			remoteInfo = CypressPhotoAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0861BD3E89739881637D8969 /* Pods_CypressPhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CypressPhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1104B9AF148F68CE9C5C767D /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.release.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38AEDE5A2250AF698D9B1815 /* Pods-CypressPhotoAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbum.debug.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbum/Pods-CypressPhotoAlbum.debug.xcconfig"; sourceTree = "<group>"; };
+		43D16C0B5F6AA9B3C0D76452 /* Pods-CypressPhotoAlbumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbumTests.debug.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbumTests/Pods-CypressPhotoAlbumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		572A3E4AD4E993D8A04CBFFA /* Pods_CypressPhotoAlbumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CypressPhotoAlbumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDA2E7B05A89E8AB5DC1FAD /* Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B039844402E6352E8B5AF0B /* Pods-CypressPhotoAlbumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbumTests.release.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbumTests/Pods-CypressPhotoAlbumTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DAE75A93A4E307BEBA5C6BF /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.debug.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E39E46A71AFED980DB3A386 /* Pods-CypressPhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CypressPhotoAlbum.release.xcconfig"; path = "Target Support Files/Pods-CypressPhotoAlbum/Pods-CypressPhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		B42A903829131F9200C6A057 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B42A903A29131FE300C6A057 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		B42A903C291328AE00C6A057 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		B49683EF2912FD6C003EA2D5 /* CypressPhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CypressPhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49683F22912FD6C003EA2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B49683F42912FD6C003EA2D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B49683F62912FD6C003EA2D5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		B49683F92912FD6C003EA2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B49683FB2912FD70003EA2D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49683FE2912FD70003EA2D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B49684002912FD70003EA2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49684052912FD70003EA2D5 /* CypressPhotoAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CypressPhotoAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49684092912FD70003EA2D5 /* CypressPhotoAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CypressPhotoAlbumTests.swift; sourceTree = "<group>"; };
+		B496840F2912FD70003EA2D5 /* CypressPhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CypressPhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49684132912FD70003EA2D5 /* CypressPhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CypressPhotoAlbumUITests.swift; sourceTree = "<group>"; };
+		B49684152912FD70003EA2D5 /* CypressPhotoAlbumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CypressPhotoAlbumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B496842829130623003EA2D5 /* AlbumRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRow.swift; sourceTree = "<group>"; };
+		B496842A29130F7A003EA2D5 /* HorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCell.swift; sourceTree = "<group>"; };
+		B4E12E8E291477990047C1DC /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B4E12E90291479AA0047C1DC /* DbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbModel.swift; sourceTree = "<group>"; };
+		B4E12E922916ABE50047C1DC /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B49683EC2912FD6C003EA2D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38DA669A3F4FC21C33DAA9F /* Pods_CypressPhotoAlbum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49684022912FD70003EA2D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76004689664C5C4A23D332BD /* Pods_CypressPhotoAlbumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B496840C2912FD70003EA2D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1FA98136F9DD5591A57867 /* Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B82A5B74F67F7C8F4D62F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0861BD3E89739881637D8969 /* Pods_CypressPhotoAlbum.framework */,
+				5DDA2E7B05A89E8AB5DC1FAD /* Pods_CypressPhotoAlbum_CypressPhotoAlbumUITests.framework */,
+				572A3E4AD4E993D8A04CBFFA /* Pods_CypressPhotoAlbumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4037D4CA342225CB16997523 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38AEDE5A2250AF698D9B1815 /* Pods-CypressPhotoAlbum.debug.xcconfig */,
+				7E39E46A71AFED980DB3A386 /* Pods-CypressPhotoAlbum.release.xcconfig */,
+				6DAE75A93A4E307BEBA5C6BF /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.debug.xcconfig */,
+				1104B9AF148F68CE9C5C767D /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.release.xcconfig */,
+				43D16C0B5F6AA9B3C0D76452 /* Pods-CypressPhotoAlbumTests.debug.xcconfig */,
+				6B039844402E6352E8B5AF0B /* Pods-CypressPhotoAlbumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B42A903729131F7200C6A057 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B42A903829131F9200C6A057 /* WebService.swift */,
+				B4E12E8E291477990047C1DC /* StorageManager.swift */,
+				B4E12E922916ABE50047C1DC /* UIImage+Extension.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B49683E62912FD6C003EA2D5 = {
+			isa = PBXGroup;
+			children = (
+				B49683F12912FD6C003EA2D5 /* CypressPhotoAlbum */,
+				B49684082912FD70003EA2D5 /* CypressPhotoAlbumTests */,
+				B49684122912FD70003EA2D5 /* CypressPhotoAlbumUITests */,
+				B49683F02912FD6C003EA2D5 /* Products */,
+				4037D4CA342225CB16997523 /* Pods */,
+				0B82A5B74F67F7C8F4D62F2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B49683F02912FD6C003EA2D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B49683EF2912FD6C003EA2D5 /* CypressPhotoAlbum.app */,
+				B49684052912FD70003EA2D5 /* CypressPhotoAlbumTests.xctest */,
+				B496840F2912FD70003EA2D5 /* CypressPhotoAlbumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B49683F12912FD6C003EA2D5 /* CypressPhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				B42A903729131F7200C6A057 /* Manager */,
+				B49684242912FE58003EA2D5 /* ViewModel */,
+				B49684232912FE47003EA2D5 /* Model */,
+				B49684222912FE39003EA2D5 /* View */,
+				B49684252912FF52003EA2D5 /* Delegates */,
+				B49684272912FF74003EA2D5 /* Resources */,
+				B49684262912FF62003EA2D5 /* Storyboards */,
+				B49684002912FD70003EA2D5 /* Info.plist */,
+			);
+			path = CypressPhotoAlbum;
+			sourceTree = "<group>";
+		};
+		B49684082912FD70003EA2D5 /* CypressPhotoAlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				B49684092912FD70003EA2D5 /* CypressPhotoAlbumTests.swift */,
+			);
+			path = CypressPhotoAlbumTests;
+			sourceTree = "<group>";
+		};
+		B49684122912FD70003EA2D5 /* CypressPhotoAlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B49684132912FD70003EA2D5 /* CypressPhotoAlbumUITests.swift */,
+				B49684152912FD70003EA2D5 /* CypressPhotoAlbumUITestsLaunchTests.swift */,
+			);
+			path = CypressPhotoAlbumUITests;
+			sourceTree = "<group>";
+		};
+		B49684222912FE39003EA2D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B49683F62912FD6C003EA2D5 /* PhotoViewController.swift */,
+				B496842829130623003EA2D5 /* AlbumRow.swift */,
+				B496842A29130F7A003EA2D5 /* HorizontalCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B49684232912FE47003EA2D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B42A903A29131FE300C6A057 /* PhotoModel.swift */,
+				B4E12E90291479AA0047C1DC /* DbModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B49684242912FE58003EA2D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B42A903C291328AE00C6A057 /* PhotoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B49684252912FF52003EA2D5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B49683F22912FD6C003EA2D5 /* AppDelegate.swift */,
+				B49683F42912FD6C003EA2D5 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		B49684262912FF62003EA2D5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B49683F82912FD6C003EA2D5 /* Main.storyboard */,
+				B49683FD2912FD70003EA2D5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B49684272912FF74003EA2D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B49683FB2912FD70003EA2D5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B49683EE2912FD6C003EA2D5 /* CypressPhotoAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49684192912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbum" */;
+			buildPhases = (
+				F9F67CF0B1EC74E6C7C40AEA /* [CP] Check Pods Manifest.lock */,
+				B49683EB2912FD6C003EA2D5 /* Sources */,
+				B49683EC2912FD6C003EA2D5 /* Frameworks */,
+				B49683ED2912FD6C003EA2D5 /* Resources */,
+				17DF711776005359DE4F19AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CypressPhotoAlbum;
+			productName = CypressPhotoAlbum;
+			productReference = B49683EF2912FD6C003EA2D5 /* CypressPhotoAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49684042912FD70003EA2D5 /* CypressPhotoAlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B496841C2912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbumTests" */;
+			buildPhases = (
+				FAF46896A674A99E75E1B62C /* [CP] Check Pods Manifest.lock */,
+				B49684012912FD70003EA2D5 /* Sources */,
+				B49684022912FD70003EA2D5 /* Frameworks */,
+				B49684032912FD70003EA2D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49684072912FD70003EA2D5 /* PBXTargetDependency */,
+			);
+			name = CypressPhotoAlbumTests;
+			productName = CypressPhotoAlbumTests;
+			productReference = B49684052912FD70003EA2D5 /* CypressPhotoAlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B496840E2912FD70003EA2D5 /* CypressPhotoAlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B496841F2912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbumUITests" */;
+			buildPhases = (
+				3AD7CA3A67AE618E321FE3C2 /* [CP] Check Pods Manifest.lock */,
+				B496840B2912FD70003EA2D5 /* Sources */,
+				B496840C2912FD70003EA2D5 /* Frameworks */,
+				B496840D2912FD70003EA2D5 /* Resources */,
+				17BDDACAEB46A028E11132E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49684112912FD70003EA2D5 /* PBXTargetDependency */,
+			);
+			name = CypressPhotoAlbumUITests;
+			productName = CypressPhotoAlbumUITests;
+			productReference = B496840F2912FD70003EA2D5 /* CypressPhotoAlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B49683E72912FD6C003EA2D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B49683EE2912FD6C003EA2D5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B49684042912FD70003EA2D5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B49683EE2912FD6C003EA2D5;
+					};
+					B496840E2912FD70003EA2D5 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B49683EE2912FD6C003EA2D5;
+					};
+				};
+			};
+			buildConfigurationList = B49683EA2912FD6C003EA2D5 /* Build configuration list for PBXProject "CypressPhotoAlbum" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B49683E62912FD6C003EA2D5;
+			productRefGroup = B49683F02912FD6C003EA2D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49683EE2912FD6C003EA2D5 /* CypressPhotoAlbum */,
+				B49684042912FD70003EA2D5 /* CypressPhotoAlbumTests */,
+				B496840E2912FD70003EA2D5 /* CypressPhotoAlbumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B49683ED2912FD6C003EA2D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49683FF2912FD70003EA2D5 /* LaunchScreen.storyboard in Resources */,
+				B49683FC2912FD70003EA2D5 /* Assets.xcassets in Resources */,
+				B49683FA2912FD6C003EA2D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49684032912FD70003EA2D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B496840D2912FD70003EA2D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17BDDACAEB46A028E11132E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17DF711776005359DE4F19AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum/Pods-CypressPhotoAlbum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum/Pods-CypressPhotoAlbum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CypressPhotoAlbum/Pods-CypressPhotoAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AD7CA3A67AE618E321FE3C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F67CF0B1EC74E6C7C40AEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CypressPhotoAlbum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF46896A674A99E75E1B62C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CypressPhotoAlbumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B49683EB2912FD6C003EA2D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42A903929131F9200C6A057 /* WebService.swift in Sources */,
+				B496842B29130F7A003EA2D5 /* HorizontalCell.swift in Sources */,
+				B49683F72912FD6C003EA2D5 /* PhotoViewController.swift in Sources */,
+				B4E12E91291479AA0047C1DC /* DbModel.swift in Sources */,
+				B4E12E8F291477990047C1DC /* StorageManager.swift in Sources */,
+				B49683F32912FD6C003EA2D5 /* AppDelegate.swift in Sources */,
+				B42A903B29131FE300C6A057 /* PhotoModel.swift in Sources */,
+				B42A903D291328AE00C6A057 /* PhotoViewModel.swift in Sources */,
+				B496842929130623003EA2D5 /* AlbumRow.swift in Sources */,
+				B4E12E932916ABE50047C1DC /* UIImage+Extension.swift in Sources */,
+				B49683F52912FD6C003EA2D5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49684012912FD70003EA2D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B496840A2912FD70003EA2D5 /* CypressPhotoAlbumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B496840B2912FD70003EA2D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49684142912FD70003EA2D5 /* CypressPhotoAlbumUITests.swift in Sources */,
+				B49684162912FD70003EA2D5 /* CypressPhotoAlbumUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49684072912FD70003EA2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49683EE2912FD6C003EA2D5 /* CypressPhotoAlbum */;
+			targetProxy = B49684062912FD70003EA2D5 /* PBXContainerItemProxy */;
+		};
+		B49684112912FD70003EA2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49683EE2912FD6C003EA2D5 /* CypressPhotoAlbum */;
+			targetProxy = B49684102912FD70003EA2D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B49683F82912FD6C003EA2D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49683F92912FD6C003EA2D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B49683FD2912FD70003EA2D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49683FE2912FD70003EA2D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B49684172912FD70003EA2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B49684182912FD70003EA2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B496841A2912FD70003EA2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AEDE5A2250AF698D9B1815 /* Pods-CypressPhotoAlbum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CypressPhotoAlbum/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B496841B2912FD70003EA2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E39E46A71AFED980DB3A386 /* Pods-CypressPhotoAlbum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CypressPhotoAlbum/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B496841D2912FD70003EA2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D16C0B5F6AA9B3C0D76452 /* Pods-CypressPhotoAlbumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CypressPhotoAlbum.app/CypressPhotoAlbum";
+			};
+			name = Debug;
+		};
+		B496841E2912FD70003EA2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B039844402E6352E8B5AF0B /* Pods-CypressPhotoAlbumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CypressPhotoAlbum.app/CypressPhotoAlbum";
+			};
+			name = Release;
+		};
+		B49684202912FD70003EA2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAE75A93A4E307BEBA5C6BF /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CypressPhotoAlbum;
+			};
+			name = Debug;
+		};
+		B49684212912FD70003EA2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1104B9AF148F68CE9C5C767D /* Pods-CypressPhotoAlbum-CypressPhotoAlbumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5US6PZPYZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucwealth.CypressPhotoAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CypressPhotoAlbum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49683EA2912FD6C003EA2D5 /* Build configuration list for PBXProject "CypressPhotoAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49684172912FD70003EA2D5 /* Debug */,
+				B49684182912FD70003EA2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49684192912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B496841A2912FD70003EA2D5 /* Debug */,
+				B496841B2912FD70003EA2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B496841C2912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B496841D2912FD70003EA2D5 /* Debug */,
+				B496841E2912FD70003EA2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B496841F2912FD70003EA2D5 /* Build configuration list for PBXNativeTarget "CypressPhotoAlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49684202912FD70003EA2D5 /* Debug */,
+				B49684212912FD70003EA2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B49683E72912FD6C003EA2D5 /* Project object */;
+}
