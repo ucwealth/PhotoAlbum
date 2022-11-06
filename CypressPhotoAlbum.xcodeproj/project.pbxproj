@@ -12,6 +12,7 @@
 		B42A903929131F9200C6A057 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903829131F9200C6A057 /* WebService.swift */; };
 		B42A903B29131FE300C6A057 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903A29131FE300C6A057 /* PhotoModel.swift */; };
 		B42A903D291328AE00C6A057 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A903C291328AE00C6A057 /* PhotoViewModel.swift */; };
+		B48C1E642917FA9800664C94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48C1E632917FA9800664C94 /* Constants.swift */; };
 		B49683F32912FD6C003EA2D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F22912FD6C003EA2D5 /* AppDelegate.swift */; };
 		B49683F52912FD6C003EA2D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F42912FD6C003EA2D5 /* SceneDelegate.swift */; };
 		B49683F72912FD6C003EA2D5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49683F62912FD6C003EA2D5 /* PhotoViewController.swift */; };
@@ -59,6 +60,7 @@
 		B42A903829131F9200C6A057 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B42A903A29131FE300C6A057 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		B42A903C291328AE00C6A057 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		B48C1E632917FA9800664C94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B49683EF2912FD6C003EA2D5 /* CypressPhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CypressPhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49683F22912FD6C003EA2D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49683F42912FD6C003EA2D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,9 +137,17 @@
 			children = (
 				B42A903829131F9200C6A057 /* WebService.swift */,
 				B4E12E8E291477990047C1DC /* StorageManager.swift */,
-				B4E12E922916ABE50047C1DC /* UIImage+Extension.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		B48C1E652917FA9E00664C94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4E12E922916ABE50047C1DC /* UIImage+Extension.swift */,
+				B48C1E632917FA9800664C94 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B49683E62912FD6C003EA2D5 = {
@@ -165,6 +175,7 @@
 		B49683F12912FD6C003EA2D5 /* CypressPhotoAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				B48C1E652917FA9E00664C94 /* Helpers */,
 				B42A903729131F7200C6A057 /* Manager */,
 				B49684242912FE58003EA2D5 /* ViewModel */,
 				B49684232912FE47003EA2D5 /* Model */,
@@ -497,6 +508,7 @@
 				B496842929130623003EA2D5 /* AlbumRow.swift in Sources */,
 				B4E12E932916ABE50047C1DC /* UIImage+Extension.swift in Sources */,
 				B49683F52912FD6C003EA2D5 /* SceneDelegate.swift in Sources */,
+				B48C1E642917FA9800664C94 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

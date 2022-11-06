@@ -1,9 +1,3 @@
-//
-//  UIImage+Extension.swift
-//  CypressPhotoAlbum
-//
-//  Created by Decagon on 05/11/2022.
-//
 
 import UIKit
 

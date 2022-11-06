@@ -1,9 +1,3 @@
-//
-//  StorageManager.swift
-//  CypressPhotoAlbum
-//
-//  Created by Decagon on 03/11/2022.
-//
 
 import Foundation
 import RealmSwift
@@ -21,6 +15,10 @@ final class StorageManager {
     func fetchAll<T: Object>(_ object: T) -> Results<T> {
         return realm.objects(T.self)
 
+    }
+    
+    func existInDb() {
+        
     }
 
 }

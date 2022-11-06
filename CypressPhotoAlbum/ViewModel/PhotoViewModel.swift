@@ -1,16 +1,9 @@
-//
-//  PhotoViewModel.swift
-//  CypressPhotoAlbum
-//
-//  Created by Decagon on 02/11/2022.
-//
 
 import Foundation
 import UIKit
 import RealmSwift
 
 class PhotoViewModel {
-    let baseUrl = "https://jsonplaceholder.typicode.com"
     let webService = WebService.shared
     let realm = try? Realm()
     let store = StorageManager.shared
@@ -25,14 +18,12 @@ class PhotoViewModel {
 
     // Get Photos
     public func loadPhotos(completion: @escaping ([PhotoAlbum]) -> ()) {
-        let photoUrl = "\(baseUrl)/photos"
-        webService.load(from: photoUrl, completion: completion)
+        webService.load(from: Constants.photoUrl, completion: completion)
     }
  
     // Get Albums 
     public func loadAlbums(completion: @escaping ([AlbumName]) -> ()) {
-        let albumUrl = "\(baseUrl)/albums"
-        webService.load(from: albumUrl, completion: completion)
+        webService.load(from: Constants.albumUrl, completion: completion)
     }
     
     func setPhotoRequests(table: UITableView) {
@@ -52,12 +43,19 @@ class PhotoViewModel {
                 
         dispatchGroup.notify(queue: .main) {
             DispatchQueue.main.async { [weak self] in
-                self?.saveToDb()
                 table.reloadData()
+                self?.saveToDb()
             }
         }
 
     }
+    
+    func offlineCheck() {
+        if store
+    }
+    
+    // If objects already exist in DB, dont do network call, fetch from DB
+    // Else, do a network call. populate UI and save to db
     
     func fetchFromDb() {
         let albums = store.fetchAll(DbAlbumName())
